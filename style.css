@@ -222,14 +222,15 @@ body {
 .btn:link,
 .btn:visited {
   display: inline-block;
-  padding: 17px 120px;
-  margin: 8px 0 0 30px;
-  border: none;
-  border-radius: 128px;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  padding: 17px 120px;
+  margin: 8px 0 0 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 128px;
   background: var(--Dark-Navy, #303b59);
   color: #ffffff;
 }
@@ -337,6 +338,14 @@ body {
 
   .btn {
     margin: 25px 0 0 30px;
+  }
+
+  .btn:hover,
+  .btn:active {
+    background: var(
+      --Gradient-1,
+      linear-gradient(180deg, #75f 0%, #6943ff 0.01%, #2f2ce9 100%)
+    );
   }
 
   .card {
